@@ -14,8 +14,8 @@
    Day-8 : home page backend
    Day-9 : Candidates registering page frontend
    Day-10 : Voters registering page frontend
-   Day-11 : Candidates registring page backend
-   Day-12 : Voters registring page backend
+   Day-11 : Candidates registering page backend
+   Day-12 : Voters registering page backend
    Day-13 : poll page frontend
    Day-14 : poll page frontend
    Day-15 : poll page backend
