@@ -4,8 +4,7 @@ import './App.css'
 import HomePage from './routes/HomePage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
      <BrowserRouter>
