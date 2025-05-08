@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   const navigate = useNavigate();
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-300 via-40% to-purple-300 text-gray-900 font-sans">
@@ -41,7 +42,7 @@ export default function HomePage() {
         <h1 className="text-6xl md:text-7xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-500">
           Welcome to VotingWeb
         </h1>
-        <button className="bg-gradient-to-r from-orange-500 to-red-600 text-white text-lg font-semibold px-12 py-4 rounded-full shadow-xl hover:scale-105 hover:from-orange-600 hover:to-red-700 transition-all duration-300">
+        <button onClick={()=> navigate("/createpoll")} className="bg-gradient-to-r from-orange-500 to-red-600 text-white text-lg font-semibold px-12 py-4 rounded-full shadow-xl hover:scale-105 hover:from-orange-600 hover:to-red-700 transition-all duration-300">  
           Create Poll
         </button>
       </main>
