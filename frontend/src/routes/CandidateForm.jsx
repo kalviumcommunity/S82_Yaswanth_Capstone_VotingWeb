@@ -3,15 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { Menu } from "lucide-react";
 
 const CandidateForm = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-300 to-purple-300">
       
       <div className="text-center my-10">
-        <h1 className="text-4xl font-extrabold text-red-600 drop-shadow-md">
-          Candidate Form
-        </h1>
+        <h1 className="text-4xl font-extrabold text-red-600 drop-shadow-md">Candidate Form</h1>
       </div>
     
       
