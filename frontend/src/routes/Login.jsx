@@ -9,7 +9,7 @@ function Login() {
         <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
 
         <div className="mb-4">
-          <label className="block text-sm font-semibold mb-1">USERNAME</label>
+          <label className="block text-sm font-semibold mb-1">E-mail</label>
           <input
             type="text"
             className="w-full h-10 bg-gray-300 px-3 rounded outline-none focus:ring-2 focus:ring-red-400"
