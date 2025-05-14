@@ -16,25 +16,28 @@ function Signup() {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    try {
-      const response = await axios.post('http://localhost:5077/api/signup', formData);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  
+  try {
+    const response = await axios.post('http://localhost:5000/api/signup', formData);
 
-      if (response.status === 201) {
-        alert('Signup successful!');
-        navi('/')
-        
-      }
-    } catch (error) {
-      if (error.response) {
-        alert(error.response.data.message || 'Signup failed');
-      } else {
-        alert('Server is not responding');
-      }
+    if (response.status === 201) {
+      // ✅ Save the email in localStorage
+      localStorage.setItem("userEmail", response.data.email);
+
+      alert('Signup successful!');
+      navi('/profile');  // Optional: redirect to profile directly
     }
-  };
+  } catch (error) {
+    if (error.response) {
+      alert(error.response.data.message || 'Signup failed');
+    } else {
+      alert('Server is not responding');
+    }
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-red-300 flex items-center justify-center px-4">
