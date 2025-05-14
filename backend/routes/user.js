@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
 
+//post
 router.post("/", async (req, res) => {
   const { username, email, password } = req.body;
   try {
@@ -12,6 +13,8 @@ router.post("/", async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 });
+
+//get
 
 router.get("/", async (req, res) => {
   try {
