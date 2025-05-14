@@ -18,7 +18,7 @@ export default function HomePage() {
 
           <div className="flex items-center space-x-3">
             <div className="w-9 h-9 bg-gradient-to-br from-pink-300 to-red-400 border-2 border-white rounded-full shadow-lg" />
-            <span className="text-lg font-semibold hover:underline transition-all duration-200">Profile</span>
+            <span onClick={() => navigate("/profile")} className="text-lg font-semibold hover:underline transition-all duration-200">Profile</span>
           </div>
         </div>
 
