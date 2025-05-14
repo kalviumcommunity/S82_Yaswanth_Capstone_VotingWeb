@@ -15,7 +15,7 @@ const sendOtp = async (email) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
-    subject: "Your OTP Code",
+    subject: "Your OTPCode",
     text: `Your OTP is ${otp}. It is valid for 5 minutes.`,
   };
 
@@ -23,4 +23,4 @@ const sendOtp = async (email) => {
   return otp;
 };
 
-module.exports = sendOtp;
+module.exports = sendOtp; 
